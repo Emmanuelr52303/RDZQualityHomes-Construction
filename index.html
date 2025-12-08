@@ -39,7 +39,7 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <h1 class="section__title brown">About RDZ Quality Homes and Construction</h1>
+                <h1 class="section__title brown">RDZ Quality Homes and Construction</h1>
                 <div class="section__description">
                     <div class="about__features">
                         <div class="about__feature" onclick="toggleAbout()">
@@ -80,21 +80,73 @@
     </section>
     <section id="projects">
         <div class="container">
-            <div class="row">
+            <div class="row project__row">
                 <h1 class="section__title brown">Projects</h1>
                 <div class="project__wrapper">
-                    <div class="project">
-                        <h3 class="project__title brown">128 Sharer St.</h3>
-                        <div class="project__img--wrapper">
-                            <img src="" alt="" class="project__img--main">
-                            <div class="project__imgs">
-                                <img src="" alt="" class="project__img">
+                    <h3 class="project__title brown">128 Sharer St.</h3>
+                    <div class="project__imgs--wrapper">
+                        <div class="flip__effect">
+                            <div class="flip__effect--inner">
+                                <div class="flip__effect--front">
+                                    <img src="./assets/128 Sharer - Main.png" alt="" class="project__img--main">
+                                </div>
+                                <div class="flip__effect--back">
+                                    <p></p>
+                                </div>
                             </div>
+                        </div>
+                        <div class="project__imgs">
+                            <img src="./assets/128 Sharer - kitchen.png" alt="" class="project__img top__left">
+                            <img src="./assets/128 Sharer - living room.png" alt="" class="project__img top__right">
+                            <img src="./assets/128 Sharer - bathroom1.png" alt="" class="project__img bottom__left">
+                            <img src="./assets/128 Sharer - bathroom2.png" alt="" class="project__img bottom__right">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img src="./assets/Logo.png" class="footer__logo--img" alt="">
+          </figure>
+          <div class="footer__social--links">
+            <a href="#landing__page" 
+            class="footer__social--link
+              link__hover-effect
+              link__hover-effect--white
+            ">
+              Home
+            </a>
+            <a href="#about" 
+            class="footer__social--link
+              link__hover-effect
+              link__hover-effect--white
+            ">
+              About
+            </a>
+            <a href="#projects" 
+            class="footer__social--link
+              link__hover-effect
+              link__hover-effect--white
+            ">
+              Projects
+            </a>
+            <a href="#" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+            " onclick="toggleModal()">
+              Contact
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright © Emmanuel Rodriguez
+          </div>
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
