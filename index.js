@@ -1,6 +1,18 @@
 let isAboutOpen = false;
 let isServiceOpen = false;
 let isRentalOpen = false;
+let isModalOpen = false;
+
+function toggleModal() {
+    if(isModalOpen) {
+        isModalOpen = false
+        console.log('Close')
+        return document.body.classList.remove("modal--open")
+    }
+    isModalOpen = true;
+    console.log("Open")
+    document.body.classList += " modal--open"
+}
 
 function toggleAbout() {
     if(isAboutOpen) {
