@@ -23,7 +23,7 @@
                     <a href="#projects" class="nav__link">Projects</a>
                 </li>
                 <li class="link__hover-effect link__hover-effect--white">
-                    <a href="" class="nav__link">Reviews</a>
+                    <a href="#reviews" class="nav__link">Reviews</a>
                 </li>
                 <li class="link__hover-effect link__hover-effect--white">
                     <a class="nav__link" onclick="toggleModal()">Contact</a>
@@ -132,7 +132,14 @@
                                     <img src="./assets/128 Sharer - Main.png" alt="" class="project__img--main">
                                 </div>
                                 <div class="flip__effect--back">
-                                    <p></p>
+                                    <p class="flip__effect--back-para">
+                                        Built in 2021 by RDZ Quality Homes and Construction, this beautifully crafted 2-bedroom, 
+                                        2-bath home showcases modern design and quality craftsmanship throughout. The home 
+                                        features a contemporary kitchen with clean finishes, a spacious and inviting living room, 
+                                        and thoughtfully designed modern bathrooms that blend comfort and style. Located just 
+                                        minutes from downtown San Antonio, this property offers both convenience and comfort, 
+                                        making it ideal for short-term stays. Currently listed on Airbnb, the home reflects our 
+                                        commitment to building functional, high-quality living spaces designed for today’s lifestyle.</p>
                                 </div>
                             </div>
                         </div>
@@ -143,6 +150,67 @@
                             <img src="./assets/128 Sharer - bathroom2.png" alt="" class="project__img bottom__right">
                         </div>
                     </div>
+                </div>
+                <div class="project__wrapper">
+                    <h3 class="project__title brown">607 E St.</h3>
+                    <div class="project__imgs--wrapper">
+                        <div class="flip__effect">
+                            <div class="flip__effect--inner">
+                                <div class="flip__effect--front">
+                                    <img src="./assets/607 - main.jpg" alt="" class="project__img--main">
+                                </div>
+                                <div class="flip__effect--back">
+                                    <p class="flip__effect--back-para">
+                                        This charming older home in Floresville has been completely remodeled inside and out 
+                                        by RDZ Quality Homes and Construction, blending classic character with modern functionality. 
+                                        The 2-bedroom, 1-bath layout preserves an antique aesthetic while incorporating thoughtful 
+                                        updates that enhance comfort, durability, and everyday living. From refreshed interiors 
+                                        to exterior improvements, every detail was carefully renovated to maintain the home’s 
+                                        original charm while meeting today’s standards. Currently being rented, this property 
+                                        reflects our ability to thoughtfully transform existing homes into beautiful, livable 
+                                        spaces without losing their unique character.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__imgs">
+                            <img src="./assets/607 - img1.jpg" alt="" class="project__img top__left">
+                            <img src="./assets/607 - img2.jpg" alt="" class="project__img top__right">
+                            <img src="./assets/607 - img3.jpg" alt="" class="project__img bottom__left">
+                            <img src="./assets/607 - img4.jpg" alt="" class="project__img bottom__right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title brown">Words from our Customers</h1>
+                <h3 class="section__subtitle brown">Write a review</h3>
+                <div class="review__wrapper">
+                    <form id="review__form" onsubmit="review(event)" action="">
+                        <p class="review__form--title">Tell us how your experince with us went</p>
+                        <div class="review__form--item">
+                            <label class="review__form--item-label">Name</label>
+                            <input type="text" name="user_name" class="input" required>
+                        </div>
+                        <div class="review__form--item">
+                            <label class="review__form--item-label">Rating</label>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="review__form--item">
+                            <label class="review__form--item-label">Message</label>
+                            <textarea name="message" class="input" required></textarea>
+                        </div>
+                        <button type="submit" id="review__submit" class="review__form--submit">
+                            Submit Review
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
