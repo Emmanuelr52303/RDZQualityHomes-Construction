@@ -37,42 +37,36 @@
         </header>
         <div class="modal">
             <div class="modal__half modal__about">
-            <h3 class="modal__title">Here's a bit about me.</h3>
-            <h4 class="modal__sub-title">Computer Engineer</h4>
+            <h3 class="modal__title">About RDZ Quality Homes</h3>
+            <h4 class="modal__sub-title">Construction Company</h4>
             <para class="modal__para">
-                Entry-level <b class="text_green">computer engineer</b> (22) with <b class="text_green">strong problem-solving 
-                skills</b> and practical experience working on hardware-software projects, 
-                including Raspberry Pi systems, circuit integration, and software development.
-                <br> 
-                Looking for an opportunity to contribute my <b class="text_green">strong work ethic</b>, 
-                technical curiosity, and motivated attitude to an engineering team.</para>
+                At RDZ Quality Homes and Construction, we are dedicated to delivering the highest 
+                quality craftsmanship while making sure every customer is completely satisfied with 
+                the finished product. With over 30 years of experience in the construction industry, 
+                our family-owned business brings knowledge, attention to detail, and a commitment to 
+                doing things the right way. From remodeling and renovations to complete home improvements, 
+                we take pride in our work, value honest and transparent communication, and strive to build 
+                lasting relationships with every customer.</para>
             </div>
             <div class="modal__half modal__contact">
             <h3 class="modal__title">Let's have a chat!</h3>
-            <h4 class="modal__sub-title">I'm currently open to new oppurtunites</h4>
-            <form id="contact__form" onsubmit="contact(event)" action="">
+            <h4 class="modal__sub-title">Always open to new jobs</h4>
+            <form id="contact__form" action="">
                 <div class="form__item">
-                <label class="form__item--label">Name</label>
-                <input type="text" name="user_name" class="input" required>
+                <label class="form__item--label">Email:</label>
+                <para>RDZqualityhomes@gmail.com</para>
                 </div>
                 <div class="form__item">
-                <label class="form__item--label">Email</label>
-                <input type="email" name="user_email" class="input" required>
+                <label class="form__item--label">Phone:</label>
+                <para>(210)-997-0125</para>
                 </div>
                 <div class="form__item">
-                <label class="form__item--label">Message</label>
-                <textarea name="message" class="input" required></textarea>
+                <label class="form__item--label">Message:</label>
+                <para>Feel free to call or message us with your name and a brief description
+                    of your job.
+                </para>
                 </div>
-                <button type="submit" id="contact__submit" class="form__submit">
-                Send it my way
-                </button>
             </form>
-            <div class="modal__overlay modal__overlay--loading">
-                <i class="fas fa-spinner"></i>
-            </div>
-            <div class="modal__overlay modal__overlay--success">
-                Thanks for the message! Looking forward to speaking with you soon.
-            </div>
             <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             </div>
         </div>
@@ -198,11 +192,13 @@
                         </div>
                         <div class="review__form--item">
                             <label class="review__form--item-label">Rating</label>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <div class="review__stars">
+                                <i class="fa-regular fa-star" onclick="setStars(1)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(2)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(3)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(4)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(5)"></i>
+                            </div>
                         </div>
                         <div class="review__form--item">
                             <label class="review__form--item-label">Message</label>

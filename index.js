@@ -2,6 +2,8 @@ let isAboutOpen = false;
 let isServiceOpen = false;
 let isRentalOpen = false;
 let isModalOpen = false;
+let stars = 0;
+const reviewStars = document.querySelector(" .review__stars")
 
 function toggleModal() {
     if(isModalOpen) {
@@ -39,4 +41,21 @@ function toggleRental() {
     }
     isRentalOpen = true;
     document.body.classList += " rental--open"
+}
+
+function setStars(num) {
+    const reviewStars = document.querySelector(".review__stars")
+    stars = num;
+    console.log(stars)
+    reviewStars.innerHTML = `<i class="${stars>=1?"fa-solid fa-star":"fa-regular fa-star"}" onclick="setStars(1)"></i>
+        <i class="${stars>=2?"fa-solid fa-star":"fa-regular fa-star"}" onclick="setStars(2)"></i>
+        <i class="${stars>=3?"fa-solid fa-star":"fa-regular fa-star"}" onclick="setStars(3)"></i>
+        <i class="${stars>=4?"fa-solid fa-star":"fa-regular fa-star"}" onclick="setStars(4)"></i>
+        <i class="${stars>=5?"fa-solid fa-star":"fa-regular fa-star"}" onclick="setStars(5)"></i>`;
+    
+}
+
+function review(event) {
+    event.preventDefault();
+    alert("Review form is currently unavailable. Coming soon.");
 }
