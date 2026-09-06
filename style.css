@@ -619,7 +619,7 @@ MODAL
         font-size: 12px;
     }
     .nav__links{
-      visibility: hidden;
+      display: none;
     }
 
 }
@@ -640,6 +640,9 @@ MODAL
         height: 24px;
         width: 24px;
     }
+    .modal{
+      height: 300px;
+    }
     .modal__half {
         padding: 12px 16px;
     }
@@ -656,8 +659,11 @@ MODAL
         line-height: 2;
         font-weight: 400;
     }
-    .nav__links{
-      visibility: hidden;
+    .modal__about{
+      display: none;
+    }
+    .modal__contact{
+      width: 100%;
     }
     .header__description--title{
       font-size: 32px;
@@ -676,5 +682,12 @@ MODAL
     }
     .about__feature--para{
       font-size: 16px;
+    }
+    .flip__effect--back-para{
+      font-size: 8px;
+      margin: 2px;
+    }
+    .small__para{
+      display: none;
     }
 }
