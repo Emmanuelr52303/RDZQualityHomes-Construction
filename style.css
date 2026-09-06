@@ -663,7 +663,7 @@ MODAL
       font-size: 32px;
     }
     .header__description--para{
-      visibility: hidden;
+      font-size: 14px;
     }
     .about__features{
       flex-direction: column;
