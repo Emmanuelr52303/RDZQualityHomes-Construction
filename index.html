@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDZ Quality Homes & Construction</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9ac74e04c6.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <section id="landing__page">
+        <nav>
+            <img class="nav__logo" src="./assets/Logo.png" alt="">
+            <ul class="nav__links">
+                <li class="link__hover-effect link__hover-effect--white">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="link__hover-effect link__hover-effect--white">
+                    <a href="projects.html" class="nav__link">Projects</a>
+                </li>
+                <li class="link__hover-effect link__hover-effect--white">
+                    <a href="#reviews" class="nav__link">Reviews</a>
+                </li>
+                <li class="link__hover-effect link__hover-effect--white">
+                    <a\ class="nav__link" onclick="toggleModal()">Contact</a>
+                </li>
+            </ul>
+            <li class="small_link">
+                <a\ class="nav__link" onclick="toggleModal()">Contact</a>
+            </li>
+        </nav>
+        <img src="./assets/Home-page.jpg" alt="" class="header__img">
+        <header class="header__description">
+            <h1 class="header__description--title">LUXURY HOMES & CONSTRUCTION IN FLORESVILLE, TX 78114</h1>
+            <para class="header__description--para">Building reliable, long-lasting structures with quality craftsmanship and trusted expertise.</para>
+        </header>
+        <div class="modal">
+            <div class="modal__half modal__about">
+            <h3 class="modal__title">About RDZ Quality Homes</h3>
+            <h4 class="modal__sub-title">Construction Company</h4>
+            <para class="modal__para">
+                At RDZ Quality Homes and Construction, we are dedicated to delivering the highest 
+                quality craftsmanship while making sure every customer is completely satisfied with 
+                the finished product. With over 30 years of experience in the construction industry, 
+                our family-owned business brings knowledge, attention to detail, and a commitment to 
+                doing things the right way. From remodeling and renovations to complete home improvements, 
+                we take pride in our work, value honest and transparent communication, and strive to build 
+                lasting relationships with every customer.</para>
+            </div>
+            <div class="modal__half modal__contact">
+            <h3 class="modal__title">Let's have a chat!</h3>
+            <h4 class="modal__sub-title">Always open to new jobs</h4>
+            <form id="contact__form" action="">
+                <div class="form__item">
+                <label class="form__item--label">Email:</label>
+                <para>RDZqualityhomes@gmail.com</para>
+                </div>
+                <div class="form__item">
+                <label class="form__item--label">Phone:</label>
+                <para>(210)-997-0125</para>
+                </div>
+                <div class="form__item">
+                <label class="form__item--label">Message:</label>
+                <para>Feel free to call or message us with your name and a brief description
+                    of your job.
+                </para>
+                </div>
+            </form>
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title brown">RDZ Quality Homes and Construction</h1>
+                <div class="section__description">
+                    <div class="about__features">
+                        <div class="about__feature" onclick="toggleAbout()">
+                            <div class="about__feature--title about brown">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <div class="feature__title">About</div>
+                            </div>
+                            <div class="about__feature--para about__para">
+                                Founded in 2008, RDZ Quality Homes and Construction is a family-owned business 
+                        dedicated to delivering reliable, high-quality remodeling and construction services. With over 30 years 
+                        of experience, our licensed general contractor leads every project with a commitment to craftsmanship, 
+                        integrity, and customer satisfaction.</div>
+                        </div>
+                        <div class="about__feature" onclick="toggleService()">
+                            <div class="about__feature--title service brown">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <div class="feature__title">Services</div>
+                            </div>
+                            <div class="about__feature--para service__para">We specialize in full home remodels and offer a wide range of services, including framing, kitchens, 
+                        bathrooms, flooring, roofing, electrical, plumbing, and more. No matter the size of the job, we approach
+                        every project with transparency, strong communication, and a focus on getting the work done quickly and professionally.</div>
+                        </div>
+                        <div class="about__feature" onclick="toggleRental()">
+                            <div class="about__feature--title rental brown">
+                                <i class="fa-solid fa-house"></i>
+                                <div class="feature__title">Rentals</div>
+                            </div>
+                            <div class="about__feature--para rental__para">In addition to our remodeling services, we also offer rental homes, giving families and individuals access 
+                        to comfortable, well-maintained living spaces built with the same care and standards we bring to our construction work.</div>
+                        </div>
+                    </div>
+                    <para class="section__para brown">
+                        At RDZ Quality Homes and Construction, we believe in doing things the right way—providing dependable service, 
+                        honest pricing, and exceptional results that homeowners can trust for years to come.
+                    </para>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="brown_background">
+        <div class="container">
+            <div class="row project__row">
+                <h1 class="section__title light_brown">Projects</h1>
+                <div class="project__wrapper">
+                    <h3 class="project__title light_brown">128 Sharer St.</h3>
+                    <div class="project__imgs--wrapper">
+                        <div class="flip__effect">
+                            <div class="flip__effect--inner">
+                                <div class="flip__effect--front">
+                                    <img src="./assets/128 Sharer - Main.png" alt="" class="project__img--main">
+                                </div>
+                                <div class="flip__effect--back">
+                                    <div class="flip__effect--back-para">
+                                        Built in 2021 by RDZ Quality Homes and Construction, this beautifully crafted 2-bedroom, 
+                                        2-bath home showcases modern design and quality craftsmanship throughout.
+                                        <div class="small__para">The home 
+                                        features a contemporary kitchen with clean finishes, a spacious and inviting living room, 
+                                        and thoughtfully designed modern bathrooms that blend comfort and style. Located just 
+                                        minutes from downtown San Antonio, this property offers both convenience and comfort, 
+                                        making it ideal for short-term stays. Currently listed on Airbnb, the home reflects our 
+                                        commitment to building functional, high-quality living spaces designed for today’s lifestyle.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__imgs">
+                            <img src="./assets/128 Sharer - kitchen.png" alt="" class="project__img top__left">
+                            <img src="./assets/128 Sharer - living room.png" alt="" class="project__img top__right">
+                            <img src="./assets/128 Sharer - bathroom1.png" alt="" class="project__img bottom__left">
+                            <img src="./assets/128 Sharer - bathroom2.png" alt="" class="project__img bottom__right">
+                        </div>
+                    </div>
+                </div>
+                <a href="projects.html">
+                    <button class="project_button">View More Projects</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title brown">Words from our Customers</h1>
+                <h3 class="section__subtitle brown">Write a review</h3>
+                <div class="review__wrapper">
+                    <form id="review__form" onsubmit="review(event)" action="">
+                        <p class="review__form--title">Tell us how your experince with us went</p>
+                        <div class="review__form--item">
+                            <label class="review__form--item-label">Name</label>
+                            <input type="text" name="user_name" class="input" required>
+                        </div>
+                        <div class="review__form--item">
+                            <label class="review__form--item-label">Rating</label>
+                            <div class="review__stars">
+                                <i class="fa-regular fa-star" onclick="setStars(1)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(2)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(3)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(4)"></i>
+                                <i class="fa-regular fa-star" onclick="setStars(5)"></i>
+                            </div>
+                        </div>
+                        <div class="review__form--item">
+                            <label class="review__form--item-label">Message</label>
+                            <textarea name="message" class="input" required></textarea>
+                        </div>
+                        <button type="submit" id="review__submit" class="review__form--submit">
+                            Submit Review
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+        <div class="row footer__row">
+          <figure>
+            <img src="./assets/Logo.png" class="footer__logo--img" alt="">
+          </figure>
+          <div class="footer__social--links">
+            <a href="#landing__page" 
+            class="footer__social--link
+              link__hover-effect
+              link__hover-effect--white
+            ">
+              Home
+            </a>
+            <a href="#about" 
+            class="footer__social--link
+              link__hover-effect
+              link__hover-effect--white
+            ">
+              About
+            </a>
+            <a href="#projects" 
+            class="footer__social--link
+              link__hover-effect
+              link__hover-effect--white
+            ">
+              Projects
+            </a>
+            <a href="#" class="
+            footer__social--link
+            link__hover-effect
+            link__hover-effect--white
+            " onclick="toggleModal()">
+              Contact
+            </a>
+          </div>
+          <div class="footer__copyright">
+            Copyright © Emmanuel Rodriguez
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
